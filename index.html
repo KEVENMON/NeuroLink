@@ -5,252 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>NeuroLink</title>
     <link rel="icon" type="image/x-icon" href="image/favicon.ico">
-    <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>NeuroLink</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <meta name="description" content="NeuroLink — Prototipo de la plataforma de innovación (HTML + CSS)">
-        <style>
-            /* Variables globales */
-            :root {
-                --bg: #0f1724;
-                --glass: rgba(255,255,255,0.06);
-                --accent1: #7c3aed;
-                --accent2: #06b6d4;
-                --muted: #94a3b8;
-                --radius: 16px;
-            }
-    
-            /* Estilos base */
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
-    
-            body {
-                background: linear-gradient(180deg, var(--bg) 0%, #071028 100%);
-                font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
-                color: #e6eef8;
-                line-height: 1.5;
-                text-align: justify;
-            }
-    
-            /* Layout principal */
-            .wrap {
-                max-width: 1150px;
-                margin: 32px auto;
-                padding: 28px;
-            }
-    
-            /* Encabezado */
-            header {
-                display: flex;
-                gap: 18px;
-                align-items: center;
-                margin-bottom: 24px;
-            }
-    
-            .brand {
-                display: flex;
-                gap: 12px;
-                align-items: center;
-            }
-    
-            .logo {
-                width: 56px;
-                height: 56px;
-                background: linear-gradient(135deg, var(--accent1), var(--accent2));
-                border-radius: 12px;
-                display: grid;
-                place-items: center;
-                box-shadow: 0 8px 30px rgba(12,18,35,0.6);
-            }
-    
-            /* Tipografía */
-            h1, h2, h3, h4 {
-                margin-bottom: 0.5em;
-            }
-    
-            p {
-                margin-bottom: 1em;
-            }
-    
-            /* Componentes */
-            .card {
-                background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-                backdrop-filter: blur(6px);
-                border-radius: var(--radius);
-                padding: 24px;
-                margin-top: 24px;
-                box-shadow: 0 6px 30px rgba(2,6,23,0.6);
-                border: 1px solid rgba(255,255,255,0.03);
-            }
-    
-            /* Sistema de pestañas */
-            .tabs {
-                display: grid;
-                grid-template-columns: 260px 1fr;
-                gap: 24px;
-            }
-    
-            .nav {
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-            }
-    
-            .nav a {
-                display: flex;
-                align-items: center;
-                gap: 12px;
-                padding: 14px;
-                border-radius: 12px;
-                text-decoration: none;
-                color: inherit;
-                border: 1px solid transparent;
-                transition: transform 0.2s ease;
-            }
-    
-            /* Contenido de los paneles */
-            .content .panel {
-                display: none;
-                animation: fade 260ms ease;
-                padding: 16px;
-            }
-    
-            /* Formularios */
-            form {
-                display: grid;
-                gap: 16px;
-                max-width: 600px;
-                margin: 0 auto;
-            }
-    
-            input, select, textarea {
-                width: 100%;
-                padding: 12px;
-                border-radius: 10px;
-                border: 1px solid rgba(255,255,255,0.1);
-                background: rgba(255,255,255,0.03);
-                color: inherit;
-                margin-top: 4px;
-            }
-    
-            form label {
-                display: flex;
-                flex-direction: column;
-                gap: 4px;
-            }
-    
-            form label.small {
-                margin-bottom: 8px;
-            }
-    
-            select, input, textarea {
-                margin-top: 2px; /* Reduce el espacio superior */
-            }
-    
-            /* Utilidades */
-            .small {
-                font-size: 13px;
-                color: var(--muted);
-                line-height: 1.4;
-            }
-    
-            /* Footer */
-            footer {
-                margin-top: 32px;
-                padding: 24px 0;
-                color: var(--muted);
-                font-size: 13px;
-                text-align: center;
-                border-top: 1px solid rgba(255,255,255,0.03);
-            }
-    
-            /* Media queries */
-            @media (max-width: 880px) {
-                .tabs {
-                    grid-template-columns: 1fr;
-                }
-                
-                .nav {
-                    flex-direction: row;
-                    overflow-x: auto;
-                    padding-bottom: 12px;
-                }
-    
-                .nav a {
-                    flex: 0 0 auto;
-                }
-            }
-        </style>
-    </head>
-    <!-- El resto del HTML se mantiene igual -->
-    </body>
-    </html></title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="description" content="NeuroLink — Prototipo de la plataforma de innovación (HTML + CSS)">
-    <style>
-:root{
-  --bg:#0f1724;
-  --glass: rgba(255,255,255,0.06);
-  --accent1: #7c3aed;
-  --accent2: #06b6d4;
-  --muted:#94a3b8;
-  --radius:16px;
-}
-*{box-sizing:border-box}
-body{margin:0;background:linear-gradient(180deg,var(--bg) 0%,#071028 100%);font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#e6eef8;line-height:1.4}
-.wrap{max-width:1150px;margin:32px auto;padding:28px}
-header{display:flex;gap:18px;align-items:center}
-.brand{display:flex;gap:12px;align-items:center}
-.logo{width:56px;height:56px;background:linear-gradient(135deg,var(--accent1),var(--accent2));border-radius:12px;display:grid;place-items:center;box-shadow:0 8px 30px rgba(12,18,35,0.6)}
-.logo svg{width:34px;height:34px}
-h1{margin:0;font-size:20px;letter-spacing:0.2px}
-p.lead{margin:4px 0 0;color:var(--muted);font-size:13px}
-.toolbar{margin-left:auto;display:flex;gap:10px}
-.btn{padding:8px 14px;border-radius:999px;background:transparent;border:1px solid rgba(255,255,255,0.06);cursor:pointer;font-size:13px;color:inherit}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter:blur(6px);border-radius:var(--radius);padding:18px;margin-top:18px;box-shadow:0 6px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
-/* Tabs */
-.tabs{display:grid;grid-template-columns:260px 1fr;gap:18px}
-.nav{display:flex;flex-direction:column;gap:8px}
-.nav a{display:flex;align-items:center;gap:12px;padding:12px;border-radius:12px;text-decoration:none;color:inherit;border:1px solid transparent}
-.nav a:hover{transform:translateX(6px)}
-.nav a .dot{width:10px;height:10px;border-radius:50%}
-/* default active style via :target fallback */
-.nav a[href="#inicio"]{background:linear-gradient(90deg, rgba(124,58,237,0.14), rgba(6,182,212,0.06));border:1px solid rgba(124,58,237,0.12)}
-.content .panel{display:none;animation:fade 260ms ease}
-.content .panel:target{display:block}
-/* show first panel when no hash present */
-.content .panel:first-of-type{display:block}
-@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.row{display:flex;gap:16px}
-.col{flex:1}
-img.resp{max-width:100%;height:auto;border-radius:12px}
-table{width:100%;border-collapse:collapse;margin-top:12px}
-table th,table td{padding:10px;border-bottom:1px dashed rgba(255,255,255,0.04);text-align:left}
-form{display:grid;gap:12px}
-input,select,textarea{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
-form label {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-form label.small {
-    margin-bottom: 8px;
-}
-
-select, input, textarea {
-    margin-top: 2px; /* Reduce el espacio superior */
-}
-.small{font-size:13px;color:var(--muted)}
-footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
-@media (max-width:880px){.tabs{grid-template-columns:1fr} .nav{flex-direction:row;overflow:auto}.nav a{flex:0 0 auto}}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="wrap">
@@ -275,7 +31,7 @@ footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
         <a href="#inicio"><span class="dot" style="background:var(--accent1)"></span>Inicio</a>
         <a href="#innovaciones"><span class="dot" style="background:var(--accent2)"></span>Innovaciones</a>
         <a href="#lab"><span class="dot" style="background:linear-gradient(90deg,var(--accent1),var(--accent2))"></span>Laboratorio Multimedia</a>
-        <a href="#colabora"><span class="dot" style="background:#f97316"></span>Colabora</a>
+        <a href="#colabora"><span class="dot" style="background:#f97316"></span>Contribuir</a>
         <a href="#datos"><span class="dot" style="background:#10b981"></span>Datos</a>
         <a href="#links"><span class="dot" style="background:#ef4444"></span>Enlaces</a>
       </nav>
@@ -283,13 +39,7 @@ footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
       <section class="content">
         <article id="inicio" class="panel">
           <h2>Bienvenido</h2>
-          <p class="small">NeuroLink es el prototipo de la plataforma de 
-            innovación que impulsa la simbiosis entre la 
-            cognición humana y la inteligencia artificial. 
-            Exploramos las fronteras del Diseño Neural y la 
-            Programación Profunda para crear soluciones que 
-            no solo responden, sino que anticipan las 
-            necesidades humanas.</p>
+          <p class="small">NeuroLink es el prototipo de la plataforma de innovación que impulsa la simbiosis entre la cognición humana y la inteligencia artificial. Exploramos las fronteras del Diseño Neural y la Programación Profunda para crear soluciones que no solo responden, sino que anticipan las necesidades humanas.</p>
           <div class="row" style="margin-top:12px">
             <div class="col">
               <img class="resp" src="image/ai.jpg" alt="Imagen de ai">
@@ -301,11 +51,10 @@ footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
                 <li>Interfaces Intuitivas (IHI): Experiencias de usuario que se sienten naturales.</li>
                 <li>Algoritmos de Auto-Evolución: Sistemas de IA que mejoran continuamente sin supervisión directa.</li>
                 <li>Sustentabilidad Neural: Enfoque ético y eficiente en el uso de recursos computacionales.</li>
-            </ul>
-
+              </ul>
             </div>
           </div>
-        </article>  
+        </article>
 
         <article id="innovaciones" class="panel">
           <h2>Innovaciones</h2>
@@ -329,7 +78,10 @@ footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
 
         <article id="lab" class="panel">
           <h2>Laboratorio Multimedia</h2>
-            <iframe style="width:100%;margin-top:12px;border-radius:12px" src="https://youtu.be/_tA5cinv0U8?si=hE1vBvMBIkSjnyTA"></iframe>
+          <video controls class="video-player" style="width:100%;margin-top:12px;border-radius:12px" poster="image/video-thumb.jpg">
+            <source src="video/video.mp4" type="video/mp4">
+            Video no soportado <code>video</code>.
+          </video>
           <div style="margin-top:12px" class="row">
             <div class="col">
               <h4>Proceso</h4>
@@ -353,55 +105,100 @@ footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
         </article>
 
         <article id="colabora" class="panel">
-    <h2>Colabora</h2>
-    <form action="#" method="post" novalidate>
-        <label class="small">Nombre<input type="text" name="nombre" placeholder="Tu nombre"></label>
-        <label class="small">Email<input type="email" name="email" placeholder="tu@correo.com"></label>
-        <label class="small">Proyecto de interés<select name="asunto">
-            <option>NeuroHUD</option>
-            <option>MindBridge</option>
-            <option>SynapSim</option>
-        </select></label>
-        <label class="small">Mensaje<textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea></label>
-        
-        <label class="small" style="flex-direction: row; align-items: center; gap: 8px;">
-            <input type="checkbox" name="newsletter" style="width: auto; margin: 0;">
-            Recibir notificaciones y boletín de innovaciones
-        </label>
+          <h2>Unete a nosotros</h2>
+          <p class="small">Forma parte de nuestra comunidad y colabora en proyectos innovadores.</p><br>
+          <form action="#" method="post" novalidate>
+              <label class="small">Nombre
+                <input type="text" name="nombre" placeholder="Tu nombre">
+              </label>
+              <label class="small">Email
+                <input type="email" name="email" placeholder="tu@correo.com">
+              </label>
+              <label class="small">Proyecto de interés
+                <select name="asunto">
+                  <option>NeuroHUD</option>
+                  <option>MindBridge</option>
+                  <option>SynapSim</option>
+                </select>
+              </label>
+              <label class="small">Mensaje
+                <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+              </label>
 
-        <div style="display:flex;gap:8px;align-items:center">
-            <button class="btn" type="submit">Enviar</button>
-            <button class="btn" type="reset">Limpiar</button>
-        </div>
-    </form>
-</article>
+              <label class="small inline">
+                <input type="checkbox" name="newsletter">
+                Recibir notificaciones y boletín de innovaciones
+              </label>
+
+              <div class="actions">
+                <button class="btn" type="submit">Enviar</button>
+                <button class="btn" type="reset">Limpiar</button>
+              </div>
+          </form>
+        </article>
 
         <article id="datos" class="panel">
           <h2>Datos</h2>
-          <p class="small">Resultados y métricas del laboratorio.</p>
+          <p class="small">La innovación se mide con métricas. Transparencia y resultados son la base de nuestro trabajo.</p>
           <table>
             <thead>
-              <tr><th>Proyecto</th><th>Estado</th><th>Impacto</th></tr>
+              <tr>
+                <th>Proyecto</th>
+                <th>Estado Actual</th>
+                <th>Métrica de Impacto</th>
+                <th>Publicaciones Relevantes</th>
+              </tr>
+
             </thead>
             <tbody>
-              <tr><td>NeuroHUD</td><td>En desarrollo</td><td>+75%</td></tr>
-              <tr><td>MindBridge</td><td>Implementado</td><td>+120 hospitales</td></tr>
-              <tr><td>SynapSim</td><td>Beta</td><td>3 universidades</td></tr>
+
+              <tr>
+                <td>NeuroHUD</td>
+                <td>En Piloto (Fase 2)</td>
+                <td>Precisión en Detección: 98.5%</td>
+                <td>1 Patente Provisional</td>
+              </tr>
+
+              <tr>
+                <td>MindBridge</td>
+                <td>Implementación Activa</td>
+                <td>Aceleración de Diagnóstico: 60%</td>
+                <td>Estudio Clínico (PDF)</td>
+              </tr>
+
+              <tr>
+                <td>SynapSim</td>
+                <td>Beta Pública</td>
+                <td>Tasa de Adopción: 82%</td>
+                <td>Tutorial de Integración (Video)</td>
+              </tr>
+
             </tbody>
           </table>
         </article>
 
         <article id="links" class="panel">
           <h2>Enlaces</h2>
-          <p class="small">Recursos externos y descargas.</p>
+          <p class="small">Accede rápidamente a documentación clave, whitepapers y nuestros canales de comunicación.</p><br>
           <ul>
-            <li><a class="small" href="https://example.com" target="_blank" rel="noopener">Visitar ejemplo.com</a></li>
-            <li><a class="small" href="/demo-interactiva.html">Ir a demo interactiva</a></li>
-            <li class="small">Descarga: <a href="/docs/presentacion.pdf" download>presentacion.pdf</a></li>
+              <li>
+                  <a class="small" href="https://www.technologyreview.es/" target="_blank" rel="noopener">
+                      <b>MIT Technology Review en español:</b> Artículos de alta calidad sobre los últimos avances en IA y Deep Learning.
+                  </a>
+              </li>
+
+              <li>
+                  <a class="small" href="https://www.aepia.org/" target="_blank" rel="noopener">
+                      <b>Comunidad Española de la Asociación para la IA (AEPIA):</b> Portal profesional para discusión y networking en el ámbito de la Inteligencia Artificial.
+                  </a>
+              </li>
+              <li>
+                  <a class="small" href="https://www.aepia.org/" target="_blank" rel="noopener">
+                      <b>Comunidad Española de la Asociación para la IA (AEPIA):</b> Portal profesional para discusión y networking en el ámbito de la Inteligencia Artificial.
+                  </a>
+              </li>
           </ul>
-        </article>
-      </section>
-    </div>
+      </article>
 
     <footer>
       <p>© 2025 NeuroLink Technologies — Inspirando la próxima generación de interfaces inteligentes.</p>
