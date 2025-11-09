@@ -9,200 +9,290 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo" aria-hidden>
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12c0 4 4 8 8 8s8-4 8-8-4-8-8-8S4 8 4 12z" fill="white" opacity="0.12"/><path d="M7 12a5 5 0 0 0 10 0" stroke="white" stroke-opacity="0.85" stroke-width="1.2" stroke-linecap="round"/></svg>
+    <!-- Contenedor principal que centra el contenido y limita el ancho -->
+    <div class="wrap">
+
+        <!-- Encabezado: marca y acciones principales -->
+        <header>
+            <div class="brand">
+                <div class="logo" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 12c0 4 4 8 8 8s8-4 8-8-4-8-8-8S4 8 4 12z" fill="white" opacity="0.12"/>
+                        <path d="M7 12a5 5 0 0 0 10 0" stroke="white" stroke-opacity="0.85" stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <!-- Nombre del proyecto y lema -->
+                <div>
+                    <h1>NeuroLink</h1>
+                    <p class="lead">Conectando el Futuro: Donde la Mente se Encuentra con la Máquina.</p>
+                </div>
+            </div>
+
+            <div class="toolbar">
+                <button class="btn">Iniciar sesión</button>
+                <button class="btn">Únete</button>
+            </div>
+        </header>
+
+        <div class="card tabs">
+            <nav class="nav" aria-label="Navegación principal">
+                <a href="#inicio"><span class="dot" style="background:var(--accent1)"></span>Inicio</a>
+                <a href="#innovaciones"><span class="dot" style="background:var(--accent2)"></span>Innovaciones</a>
+                <a href="#lab"><span class="dot" style="background:linear-gradient(90deg,var(--accent1),var(--accent2))"></span>Laboratorio Multimedia</a>
+                <a href="#datos"><span class="dot" style="background:#10b981"></span>Datos</a>
+                <a href="#links"><span class="dot" style="background:#ef4444"></span>Enlaces</a>
+                <a href="#colabora"><span class="dot" style="background:#f97316"></span>Contribuir</a>
+            </nav>
+
+            <section class="content">
+
+                <!-- Panel de bienvenida -->
+                <article id="inicio" class="panel">
+                    <h2>Bienvenido</h2>
+                    <p class="small">
+                        NeuroLink es el prototipo de la plataforma de innovación que impulsa la simbiosis entre la cognición humana y la inteligencia artificial. Exploramos las fronteras del Diseño Neural y la Programación Profunda para crear soluciones que no solo responden, sino que anticipan las necesidades humanas.
+                    </p>
+
+                    <!-- Rejilla con imagen y lista de pilares -->
+                    <div class="row" style="margin-top:12px">
+                        <div class="col">
+                            <img class="resp" src="image/ai.jpg" alt="Imagen de inteligencia artificial">
+                        </div>
+
+                        <div class="col">
+                            <h3>Pilares de NeuroLink</h3>
+                            <ul>
+                                <li>Cognición Aumentada: Herramientas que extienden las capacidades intelectuales.</li>
+                                <li>Interfaces Intuitivas (IHI): Experiencias de usuario que se sienten naturales.</li>
+                                <li>Algoritmos de Auto-Evolución: Sistemas de IA que mejoran continuamente sin supervisión directa.</li>
+                                <li>Sustentabilidad Neural: Enfoque ético y eficiente en el uso de recursos computacionales.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Panel de innovaciones: galería de proyectos -->
+                <article id="innovaciones" class="panel">
+                    <h2>Innovaciones</h2>
+                    <p class="small">Nuestro Ecosistema de Soluciones Avanzadas</p>
+                    <p class="small">
+                        Cada proyecto en NeuroLink representa un salto cuántico. Aquí presentamos nuestros desarrollos más recientes, listos para redefinir industrias.
+                    </p>
+
+                    <!-- Galería responsiva  -->
+                    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px">
+                        <figure style="margin:0">
+                            <img class="resp" src="image/Neuro.png" alt="NeuroHUD">
+                            <figcaption class="small">NeuroHUD — interfaz holográfica adaptativa</figcaption>
+                        </figure>
+
+                        <figure style="margin:0">
+                            <img class="resp" src="image/Mind.png" alt="MindBridge">
+                            <figcaption class="small">MindBridge — IA conectiva para investigación médica</figcaption>
+                        </figure>
+
+                        <figure style="margin:0">
+                            <img class="resp" src="image/Synap.png" alt="SynapSim">
+                            <figcaption class="small">SynapSim — simulador de redes cerebrales</figcaption>
+                        </figure>
+                    </div>
+                </article>
+
+                <article id="lab" class="panel">
+                    <h2>Laboratorio Multimedia</h2>
+
+                    <!-- El video carga desde la carpeta 'video' en el proyecto -->
+                    <video controls class="video-player" poster="image/video-thumb.jpg" style="width:100%;margin-top:12px;border-radius:12px">
+                        <source src="video/video.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento <code>video</code>.
+                    </video>
+
+                    <div class="row" style="margin-top:12px">
+                        <div class="col">
+                            <h4>Proceso</h4>
+                            <ol>
+                                <li>Investigación Profunda.</li>
+                                <li>Modelado de Prototipos.</li>
+                                <li>Validación Rigurosa.</li>
+                                <li>Despliegue y Monitoreo.</li>
+                            </ol>
+                        </div>
+
+                        <div class="col">
+                            <h4>Hitos Clave</h4>
+                            <ul>
+                                <li>Lanzamiento del Whitepaper de Diseño Neural.</li>
+                                <li>Alianza Estratégica con Instituciones Médicas.</li>
+                                <li>Obtención de Patentes Tecnológicas.</li>
+                                <li>Fase de Expansión Internacional.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Panel de colaboración: formulario que envía a registro.php -->
+                <article id="colabora" class="panel">
+                    <h2>Registro de Científicos Colaboradores</h2>
+                    <p class="small">
+                        Únete a nuestra red global de investigadores. Por favor, proporciona los siguientes datos para evaluar tu perfil y áreas de colaboración potencial.
+                    </p>
+
+                    <!-- Formulario: envia por POST a registro.php; se abre en nueva pestaña -->
+                    <form action="registro.php" method="POST" enctype="multipart/form-data" target="_blank">
+                        <!-- Campos con nombres importantes (usados por registro.php) -->
+                        <label class="small">
+                            Nombre Completo (Requerido)
+                            <input type="text" name="nombre_completo" placeholder="Nombre y Apellido" required>
+                        </label>
+
+                        <label class="small">
+                            Email Profesional (Requerido)
+                            <input type="email" name="email_profesional" placeholder="tu.nombre@institucion.com" required>
+                        </label>
+
+                        <label class="small">
+                            Institución/Universidad Actual
+                            <input type="text" name="institucion" placeholder="Nombre de la Universidad o Centro de Investigación">
+                        </label>
+
+                        <label class="small">
+                            Área Principal de Especialización
+                            <select name="area_especializacion">
+                                <option value="" disabled selected>Selecciona tu campo de estudio principal</option>
+                                <option value="neurociencia">Neurociencia Computacional</option>
+                                <option value="deep_learning">Deep Learning y Redes Neuronales</option>
+                                <option value="bci">Interfaces Cerebro-Máquina (BCI)</option>
+                                <option value="robotica">Robótica e Inteligencia Artificial</option>
+                                <option value="genomica">Genómica y Bioinformática</option>
+                            </select>
+                        </label>
+
+                        <label class="small">
+                            Máximo Nivel Educativo
+                            <select name="nivel_educativo">
+                                <option value="maestria">Maestría</option>
+                                <option value="doctorado" selected>Doctorado (PhD)</option>
+                                <option value="postdoc">Postdoctorado</option>
+                            </select>
+                        </label>
+
+                        <label class="small">
+                            Años de Experiencia en Investigación (Mínimo 3)
+                            <input type="number" name="anos_experiencia" min="3" placeholder="Ej: 8" required>
+                        </label>
+
+                        <!-- Checkbox para interés en proyectos (cada uno enviado si está marcado) -->
+                        <label class="small" style="margin-top:10px;">Proyectos de Interés para Colaboración</label>
+                        <div style="display:flex;flex-direction:column;gap:8px">
+                            <label class="small" style="flex-direction:row;align-items:center;gap:8px">
+                                <input type="checkbox" name="interes_neurohud" style="width:auto;margin:0">
+                                NeuroHUD (Interfaces Holográficas)
+                            </label>
+
+                            <label class="small" style="flex-direction:row;align-items:center;gap:8px">
+                                <input type="checkbox" name="interes_mindbridge" style="width:auto;margin:0">
+                                MindBridge (IA Médica Conectiva)
+                            </label>
+
+                            <label class="small" style="flex-direction:row;align-items:center;gap:8px">
+                                <input type="checkbox" name="interes_synapsim" style="width:auto;margin:0">
+                                SynapSim (Simulación Neural)
+                            </label>
+                        </div>
+
+                        <label class="small">
+                            URL de Perfil Académico (LinkedIn, ResearchGate, etc.)
+                            <input type="url" name="url_perfil" placeholder="https://linkedin.com/in/tunombre">
+                        </label>
+
+                        <label class="small">
+                            Resumen de Experiencia (Máx. 300 caracteres)
+                            <textarea name="resumen_experiencia" rows="4" maxlength="300" placeholder="Describe brevemente tus logros más relevantes en el campo..."></textarea>
+                        </label>
+
+                        <!-- Aceptación de términos (campo requerido) -->
+                        <label class="small" style="flex-direction:row;align-items:center;gap:8px;margin-top:10px">
+                            <input type="checkbox" name="acepta_terminos" style="width:auto;margin:0" required>
+                            Acepto los <a href="#" style="color:var(--accent2);text-decoration:none">Términos de Colaboración</a> (Requerido)
+                        </label>
+
+                        <!-- Botones de envío y limpieza -->
+                        <div style="display:flex;gap:8px;align-items:center;margin-top:15px">
+                            <button class="btn" type="submit">Enviar Registro</button>
+                            <button class="btn" type="reset">Limpiar Formulario</button>
+                        </div>
+                    </form>
+                </article>
+
+                <!-- Panel con tablas de datos y métricas -->
+                <article id="datos" class="panel">
+                    <h2>Datos</h2>
+                    <p class="small">La innovación se mide con métricas. Transparencia y resultados son la base de nuestro trabajo.</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Proyecto</th>
+                                <th>Estado Actual</th>
+                                <th>Métrica de Impacto</th>
+                                <th>Publicaciones Relevantes</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>NeuroHUD</td>
+                                <td>En Piloto (Fase 2)</td>
+                                <td>Precisión en Detección: 98.5%</td>
+                                <td>1 Patente Provisional</td>
+                            </tr>
+
+                            <tr>
+                                <td>MindBridge</td>
+                                <td>Implementación Activa</td>
+                                <td>Aceleración de Diagnóstico: 60%</td>
+                                <td>Estudio Clínico (PDF)</td>
+                            </tr>
+
+                            <tr>
+                                <td>SynapSim</td>
+                                <td>Beta Pública</td>
+                                <td>Tasa de Adopción: 82%</td>
+                                <td>Tutorial de Integración (Video)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <!-- Panel con enlaces útiles -->
+                <article id="links" class="panel">
+                    <h2>Enlaces</h2>
+                    <p class="small">Accede rápidamente a documentación clave, whitepapers y nuestros canales de comunicación.</p>
+                    <ul>
+                        <li>
+                            <a class="small" href="https://www.technologyreview.es/" target="_blank" rel="noopener">
+                                <b>MIT Technology Review en español:</b> Artículos sobre avances en IA y Deep Learning.
+                            </a>
+                        </li>
+                        <li>
+                            <a class="small" href="https://www.aepia.org/" target="_blank" rel="noopener">
+                                <b>AEPIA:</b> Comunidad española para discusión y networking en IA.
+                            </a>
+                        </li>
+                        <li>
+                            <a class="small" href="/docs/presentacion.pdf" download>Descarga: presentacion.pdf</a>
+                        </li>
+                    </ul>
+                </article>
+
+            </section>
         </div>
-        <div>
-          <h1>NeuroLink</h1>
-          <p class="lead">Conectando el Futuro: Donde la Mente se Encuentra con la Máquina.</p>
-        </div>
-      </div>
-      <div class="toolbar">
-        <button class="btn">Iniciar sesión</button>
-        <button class="btn">Únete</button>
-      </div>
-    </header>
 
-    <div class="card tabs">
-      <nav class="nav" aria-label="Navegación principal">
-        <a href="#inicio"><span class="dot" style="background:var(--accent1)"></span>Inicio</a>
-        <a href="#innovaciones"><span class="dot" style="background:var(--accent2)"></span>Innovaciones</a>
-        <a href="#lab"><span class="dot" style="background:linear-gradient(90deg,var(--accent1),var(--accent2))"></span>Laboratorio Multimedia</a>
-        <a href="#colabora"><span class="dot" style="background:#f97316"></span>Contribuir</a>
-        <a href="#datos"><span class="dot" style="background:#10b981"></span>Datos</a>
-        <a href="#links"><span class="dot" style="background:#ef4444"></span>Enlaces</a>
-      </nav>
-
-      <section class="content">
-        <article id="inicio" class="panel">
-          <h2>Bienvenido</h2>
-          <p class="small">NeuroLink es el prototipo de la plataforma de innovación que impulsa la simbiosis entre la cognición humana y la inteligencia artificial. Exploramos las fronteras del Diseño Neural y la Programación Profunda para crear soluciones que no solo responden, sino que anticipan las necesidades humanas.</p>
-          <div class="row" style="margin-top:12px">
-            <div class="col">
-              <img class="resp" src="image/ai.jpg" alt="Imagen de ai">
-            </div>
-            <div class="col">
-              <h3>Pilares de NeuroLink</h3>
-              <ul>
-                <li>Cognición Aumentada: Herramientas que extienden las capacidades intelectuales.</li>
-                <li>Interfaces Intuitivas (IHI): Experiencias de usuario que se sienten naturales.</li>
-                <li>Algoritmos de Auto-Evolución: Sistemas de IA que mejoran continuamente sin supervisión directa.</li>
-                <li>Sustentabilidad Neural: Enfoque ético y eficiente en el uso de recursos computacionales.</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <article id="innovaciones" class="panel">
-          <h2>Innovaciones</h2>
-          <p class="small">Nuestro Ecosistema de Soluciones Avanzadas</p>
-          <p class="small">Cada proyecto en NeuroLink representa un salto cuántico. Aquí presentamos nuestros desarrollos más recientes, listos para redefinir industrias.</p>
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px">
-            <figure style="margin:0">
-              <img class="resp" src="image/Neuro.png" alt="NeuroHUD">
-              <figcaption class="small">NeuroHUD — interfaz holográfica adaptativa</figcaption>
-            </figure>
-            <figure style="margin:0">
-              <img class="resp" src="image/Mind.png" alt="MindBridge">
-              <figcaption class="small">MindBridge — IA conectiva para investigación médica</figcaption>
-            </figure>
-            <figure style="margin:0">
-              <img class="resp" src="image/Synap.png" alt="SynapSim">
-              <figcaption class="small">SynapSim — simulador de redes cerebrales</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <article id="lab" class="panel">
-          <h2>Laboratorio Multimedia</h2>
-          <video controls class="video-player" style="width:100%;margin-top:12px;border-radius:12px" poster="image/video-thumb.jpg">
-            <source src="video/video.mp4" type="video/mp4">
-            Video no soportado <code>video</code>.
-          </video>
-          <div style="margin-top:12px" class="row">
-            <div class="col">
-              <h4>Proceso</h4>
-              <ol>
-                <li>Investigación Profunda.</li>
-                <li>Modelado de Prototipos.</li>
-                <li>Validación Rigurosa.</li>
-                <li>Despliegue y Monitoreo.</li>
-              </ol>
-            </div>
-            <div class="col">
-              <h4>Hitos Clave</h4>
-              <ul>
-                <li>Lanzamiento del Whitepaper de Diseño Neural.</li>
-                <li>Alianza Estratégica con Instituciones Médicas.</li>
-                <li>Obtención de Patentes Tecnológicas.</li>
-                <li>Fase de Expansión Internacional.</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <article id="colabora" class="panel">
-          <h2>Unete a nosotros</h2>
-          <p class="small">Forma parte de nuestra comunidad y colabora en proyectos innovadores.</p><br>
-          <form action="#" method="post" novalidate>
-              <label class="small">Nombre
-                <input type="text" name="nombre" placeholder="Tu nombre">
-              </label>
-              <label class="small">Email
-                <input type="email" name="email" placeholder="tu@correo.com">
-              </label>
-              <label class="small">Proyecto de interés
-                <select name="asunto">
-                  <option>NeuroHUD</option>
-                  <option>MindBridge</option>
-                  <option>SynapSim</option>
-                </select>
-              </label>
-              <label class="small">Mensaje
-                <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
-              </label>
-
-              <label class="small inline">
-                <input type="checkbox" name="newsletter">
-                Recibir notificaciones y boletín de innovaciones
-              </label>
-
-              <div class="actions">
-                <button class="btn" type="submit">Enviar</button>
-                <button class="btn" type="reset">Limpiar</button>
-              </div>
-          </form>
-        </article>
-
-        <article id="datos" class="panel">
-          <h2>Datos</h2>
-          <p class="small">La innovación se mide con métricas. Transparencia y resultados son la base de nuestro trabajo.</p>
-          <table>
-            <thead>
-              <tr>
-                <th>Proyecto</th>
-                <th>Estado Actual</th>
-                <th>Métrica de Impacto</th>
-                <th>Publicaciones Relevantes</th>
-              </tr>
-
-            </thead>
-            <tbody>
-
-              <tr>
-                <td>NeuroHUD</td>
-                <td>En Piloto (Fase 2)</td>
-                <td>Precisión en Detección: 98.5%</td>
-                <td>1 Patente Provisional</td>
-              </tr>
-
-              <tr>
-                <td>MindBridge</td>
-                <td>Implementación Activa</td>
-                <td>Aceleración de Diagnóstico: 60%</td>
-                <td>Estudio Clínico (PDF)</td>
-              </tr>
-
-              <tr>
-                <td>SynapSim</td>
-                <td>Beta Pública</td>
-                <td>Tasa de Adopción: 82%</td>
-                <td>Tutorial de Integración (Video)</td>
-              </tr>
-
-            </tbody>
-          </table>
-        </article>
-
-        <article id="links" class="panel">
-          <h2>Enlaces</h2>
-          <p class="small">Accede rápidamente a documentación clave, whitepapers y nuestros canales de comunicación.</p><br>
-          <ul>
-              <li>
-                  <a class="small" href="https://www.technologyreview.es/" target="_blank" rel="noopener">
-                      <b>MIT Technology Review en español:</b> Artículos de alta calidad sobre los últimos avances en IA y Deep Learning.
-                  </a>
-              </li>
-
-              <li>
-                  <a class="small" href="https://www.aepia.org/" target="_blank" rel="noopener">
-                      <b>Comunidad Española de la Asociación para la IA (AEPIA):</b> Portal profesional para discusión y networking en el ámbito de la Inteligencia Artificial.
-                  </a>
-              </li>
-              <li>
-                  <a class="small" href="https://www.aepia.org/" target="_blank" rel="noopener">
-                      <b>Comunidad Española de la Asociación para la IA (AEPIA):</b> Portal profesional para discusión y networking en el ámbito de la Inteligencia Artificial.
-                  </a>
-              </li>
-          </ul>
-      </article>
-
-    <footer>
-      <p>© 2025 NeuroLink Technologies — Inspirando la próxima generación de interfaces inteligentes.</p>
-    </footer>
-  </div>
+        <!-- Pie de página -->
+        <footer>
+            <p>© 2025 NeuroLink Technologies — Inspirando la próxima generación de interfaces inteligentes.</p>
+        </footer>
+    </div>
 </body>
 </html>
