@@ -120,25 +120,23 @@
                 <h2>Registro de Científicos Colaboradores</h2>
                 <p>Únete a nuestra red global...</p>
 
-                <div class="row">
-                    <div class="col-12 col-lg-8 col-xl-9 mx-auto">
                 <form action="registro.php" method="POST" target="_blank" enctype="multipart/form-data" class="row g-3">
-                    <div class="col-12">
+                    <div class="col-12 col-md-6">
                         <label class="form-label">Nombre Completo</label>
                         <input type="text" name="nombre_completo" class="form-control" required>
                     </div>
 
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-md-6">
                         <label class="form-label">Email Profesional</label>
                         <input type="email" name="email_profesional" class="form-control" required>
                     </div>
 
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-md-6">
                         <label class="form-label">Institución</label>
                         <input type="text" name="institucion" class="form-control">
                     </div>
 
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-md-6">
                         <label class="form-label">Área de Especialización</label>
                         <select name="area_especializacion" class="form-select">
                             <option disabled selected>Selecciona...</option>
@@ -148,35 +146,33 @@
                         </select>
                     </div>
 
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-md-6">
                         <label class="form-label">Años de Experiencia</label>
                         <input type="number" min="3" name="anos_experiencia" class="form-control">
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-12 col-md-6">
                         <label class="form-label">Proyectos de Interés</label>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="interes_neurohud" id="interesNeurohud">
-                            <label class="form-check-label" for="interesNeurohud">NeuroHUD</label>
+                            <input class="form-check-input" type="checkbox" name="interes_neurohud" id="chkNeuroHUD">
+                            <label class="form-check-label" for="chkNeuroHUD">NeuroHUD</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="interes_mindbridge" id="interesMindbridge">
-                            <label class="form-check-label" for="interesMindbridge">MindBridge</label>
+                            <input class="form-check-input" type="checkbox" name="interes_mindbridge" id="chkMindBridge">
+                            <label class="form-check-label" for="chkMindBridge">MindBridge</label>
                         </div>
                     </div>
 
                     <div class="col-12">
                         <label class="form-label">Resumen</label>
-                        <textarea name="resumen_experiencia" class="form-control" maxlength="300"></textarea>
+                        <textarea name="resumen_experiencia" class="form-control" maxlength="300" rows="2"></textarea>
                     </div>
 
                     <div class="col-12">
-                        <button class="btn btn-info me-2" type="submit">Enviar</button>
+                        <button class="btn btn-info" type="submit">Enviar</button>
                         <button class="btn btn-outline-light" type="reset">Limpiar</button>
                     </div>
                 </form>
-                    </div>
-                </div>
             </article>
 
             <!-- Datos -->
