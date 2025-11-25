@@ -1,54 +1,124 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>NeuroLink</title>
     <link rel="icon" type="image/x-icon" href="image/favicon.ico">
-    <meta name="description" content="NeuroLink — Prototipo de la plataforma de innovación (HTML)">
+    <meta name="description" content="NeuroLink — Prototipo de la plataforma de innovación (HTML + Tailwind)">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div>
 
-        <header>
+<body class="min-h-screen font-sans text-[#e6eef8] bg-gradient-to-b from-[#0f1724] to-[#071028] antialiased">
+
+    <!-- WRAP -->
+    <div class="max-w-[1150px] mx-auto mt-8 mb-8 p-7">
+
+        <!-- HEADER -->
+        <header class="flex items-center gap-5 mb-6">
+
+            <!-- BRAND -->
+            <div class="flex items-center gap-3">
+                
+                <!-- LOGO -->
+                <div class="w-14 h-14 rounded-xl grid place-items-center shadow-[0_8px_30px_rgba(12,18,35,0.6)] 
+                            bg-gradient-to-br from-[#7c3aed] to-[#06b6d4]">
+                    <svg viewBox="0 0 24 24" fill="none" class="w-9 h-9">
+                        <path d="M4 12c0 4 4 8 8 8s8-4 8-8-4-8-8-8S4 8 4 12z"
+                              fill="white" opacity="0.12"/>
+                        <path d="M7 12a5 5 0 0 0 10 0"
+                              stroke="white" stroke-opacity="0.85"
+                              stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <!-- Nombre -->
                 <div>
-                    <h1>NeuroLink</h1>
-                    <p>Conectando el Futuro: Donde la Mente se Encuentra con la Máquina.</p>
+                    <h1 class="text-[20px] tracking-[0.2px] m-0">NeuroLink</h1>
+                    <p class="text-[13px] text-[#94a3b8] mt-1">
+                        Conectando el Futuro: Donde la Mente se Encuentra con la Máquina.
+                    </p>
                 </div>
             </div>
 
-            <div>
-                <button>Iniciar sesión</button>
-                <button>Únete</button>
+            <!-- TOOLBAR -->
+            <div class="ml-auto flex gap-3">
+                <button class="px-4 py-2 rounded-full text-[13px] border border-white/10 bg-transparent hover:border-white/20 transition">
+                    Iniciar sesión
+                </button>
+                <button class="px-4 py-2 rounded-full text-[13px] bg-gradient-to-r from-[#7c3aed] to-[#06b6d4] text-black font-medium hover:opacity-90 transition">
+                    Únete
+                </button>
             </div>
         </header>
 
-        <div>
-            <nav aria-label="Navegación principal">
-                <a href="#inicio">Inicio</a>
-                <a href="#innovaciones">Innovaciones</a>
-                <a href="#lab">Laboratorio Multimedia</a>
-                <a href="#datos">Datos</a>
-                <a href="#links">Enlaces</a>
-                <a href="#colabora">Contribuir</a>
+        <!-- CARD + TABS -->
+        <div class="grid grid-cols-[260px_1fr] gap-5 mt-5 p-5 rounded-2xl 
+                    bg-gradient-to-b from-white/5 to-white/5/10 backdrop-blur-md
+                    shadow-[0_6px_30px_rgba(2,6,23,0.6)] border border-white/10">
+
+            <!-- NAV -->
+            <nav class="flex flex-col gap-2" aria-label="Navegación principal">
+
+                <a href="#inicio"
+                   class="flex items-center gap-3 p-3 rounded-xl transition 
+                          border border-violet-500/20 
+                          bg-gradient-to-r from-violet-500/20 to-cyan-500/10">
+                    <span class="w-3 h-3 rounded-full bg-[#7c3aed]"></span>
+                    Inicio
+                </a>
+
+                <a href="#innovaciones"
+                   class="flex items-center gap-3 p-3 rounded-xl transition hover:translate-x-1 border border-transparent hover:border-white/10">
+                    <span class="w-3 h-3 rounded-full bg-[#06b6d4]"></span>
+                    Innovaciones
+                </a>
+
+                <a href="#lab"
+                   class="flex items-center gap-3 p-3 rounded-xl transition hover:translate-x-1 border border-transparent hover:border-white/10">
+                    <span class="w-3 h-3 rounded-full bg-gradient-to-r from-[#7c3aed] to-[#06b6d4]"></span>
+                    Laboratorio Multimedia
+                </a>
+
+                <a href="#datos"
+                   class="flex items-center gap-3 p-3 rounded-xl transition hover:translate-x-1 border border-transparent hover:border-white/10">
+                    <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                    Datos
+                </a>
+
+                <a href="#links"
+                   class="flex items-center gap-3 p-3 rounded-xl transition hover:translate-x-1 border border-transparent hover:border-white/10">
+                    <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                    Enlaces
+                </a>
+
+                <a href="#colabora"
+                   class="flex items-center gap-3 p-3 rounded-xl transition hover:translate-x-1 border border-transparent hover:border-white/10">
+                    <span class="w-3 h-3 rounded-full bg-orange-500"></span>
+                    Contribuir
+                </a>
             </nav>
 
-            <section>
+            <!-- CONTENT (PANELES) -->
+            <section class="space-y-6">
 
-                <article id="inicio">
-                    <h2>Bienvenido</h2>
-                    <p>
+                <!-- Panel: INICIO -->
+                <article id="inicio" class="panel bg-transparent p-4 rounded-lg">
+                    <h2 class="text-2xl font-semibold">Bienvenido</h2>
+                    <p class="text-sm text-[#94a3b8] mt-2">
                         NeuroLink es el prototipo de la plataforma de innovación que impulsa la simbiosis entre la cognición humana y la inteligencia artificial. Exploramos las fronteras del Diseño Neural y la Programación Profunda para crear soluciones que no solo responden, sino que anticipan las necesidades humanas.
                     </p>
 
-                    <div>
-                        <div>
-                            <img src="image/ai.jpg" alt="Imagen de inteligencia artificial">
+                    <!-- Rejilla con imagen y lista de pilares -->
+                    <div class="mt-3 flex gap-4 flex-col md:flex-row">
+                        <div class="flex-1">
+                            <img src="image/ai.jpg" alt="Imagen de inteligencia artificial"
+                                 class="w-full h-auto rounded-xl object-cover"/>
                         </div>
 
-                        <div>
-                            <h3>Pilares de NeuroLink</h3>
-                            <ul>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-medium">Pilares de NeuroLink</h3>
+                            <ul class="list-disc list-inside mt-2 space-y-2 text-sm text-[#94a3b8]">
                                 <li>Cognición Aumentada: Herramientas que extienden las capacidades intelectuales.</li>
                                 <li>Interfaces Intuitivas (IHI): Experiencias de usuario que se sienten naturales.</li>
                                 <li>Algoritmos de Auto-Evolución: Sistemas de IA que mejoran continuamente sin supervisión directa.</li>
@@ -58,43 +128,47 @@
                     </div>
                 </article>
 
-                <article id="innovaciones">
-                    <h2>Innovaciones</h2>
-                    <p>Nuestro Ecosistema de Soluciones Avanzadas</p>
-                    <p>
+                <!-- Panel: INNOVACIONES -->
+                <article id="innovaciones" class="panel bg-transparent p-4 rounded-lg hidden">
+                    <h2 class="text-2xl font-semibold">Innovaciones</h2>
+                    <p class="text-sm text-[#94a3b8] mt-1">Nuestro Ecosistema de Soluciones Avanzadas</p>
+                    <p class="text-sm text-[#94a3b8] mt-2">
                         Cada proyecto en NeuroLink representa un salto cuántico. Aquí presentamos nuestros desarrollos más recientes, listos para redefinir industrias.
                     </p>
 
-                    <div>
-                        <figure>
-                            <img src="image/Neuro.png" alt="NeuroHUD">
-                            <figcaption>NeuroHUD — interfaz holográfica adaptativa</figcaption>
+                    <!-- Galería responsiva -->
+                    <div class="mt-4 grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
+                        <figure class="m-0 rounded-xl overflow-hidden bg-white/5 p-2">
+                            <img src="image/Neuro.png" alt="NeuroHUD" class="w-full h-40 object-cover rounded-md"/>
+                            <figcaption class="text-sm text-[#94a3b8] mt-2 text-center">NeuroHUD — interfaz holográfica adaptativa</figcaption>
                         </figure>
 
-                        <figure>
-                            <img src="image/Mind.png" alt="MindBridge">
-                            <figcaption>MindBridge — IA conectiva para investigación médica</figcaption>
+                        <figure class="m-0 rounded-xl overflow-hidden bg-white/5 p-2">
+                            <img src="image/Mind.png" alt="MindBridge" class="w-full h-40 object-cover rounded-md"/>
+                            <figcaption class="text-sm text-[#94a3b8] mt-2 text-center">MindBridge — IA conectiva para investigación médica</figcaption>
                         </figure>
 
-                        <figure>
-                            <img src="image/Synap.png" alt="SynapSim">
-                            <figcaption>SynapSim — simulador de redes cerebrales</figcaption>
+                        <figure class="m-0 rounded-xl overflow-hidden bg-white/5 p-2">
+                            <img src="image/Synap.png" alt="SynapSim" class="w-full h-40 object-cover rounded-md"/>
+                            <figcaption class="text-sm text-[#94a3b8] mt-2 text-center">SynapSim — simulador de redes cerebrales</figcaption>
                         </figure>
                     </div>
                 </article>
 
-                <article id="lab">
-                    <h2>Laboratorio Multimedia</h2>
+                <!-- Panel: LABORATORIO MULTIMEDIA -->
+                <article id="lab" class="panel bg-transparent p-4 rounded-lg hidden">
+                    <h2 class="text-2xl font-semibold">Laboratorio Multimedia</h2>
 
-                    <video controls poster="image/video-thumb.jpg">
+                    <!-- Video -->
+                    <video controls poster="image/video-thumb.jpg" class="w-full mt-3 rounded-xl">
                         <source src="video/video.mp4" type="video/mp4">
                         Tu navegador no soporta el elemento <code>video</code>.
                     </video>
 
-                    <div>
-                        <div>
-                            <h4>Proceso</h4>
-                            <ol>
+                    <div class="mt-4 flex gap-4 flex-col md:flex-row">
+                        <div class="flex-1">
+                            <h4 class="font-medium">Proceso</h4>
+                            <ol class="list-decimal list-inside mt-2 text-sm text-[#94a3b8] space-y-1">
                                 <li>Investigación Profunda.</li>
                                 <li>Modelado de Prototipos.</li>
                                 <li>Validación Rigurosa.</li>
@@ -102,9 +176,9 @@
                             </ol>
                         </div>
 
-                        <div>
-                            <h4>Hitos Clave</h4>
-                            <ul>
+                        <div class="flex-1">
+                            <h4 class="font-medium">Hitos Clave</h4>
+                            <ul class="list-disc list-inside mt-2 text-sm text-[#94a3b8] space-y-1">
                                 <li>Lanzamiento del Whitepaper de Diseño Neural.</li>
                                 <li>Alianza Estratégica con Instituciones Médicas.</li>
                                 <li>Obtención de Patentes Tecnológicas.</li>
@@ -114,159 +188,213 @@
                     </div>
                 </article>
 
-                <article id="colabora">
-                    <h2>Registro de Científicos Colaboradores</h2>
-                    <p>
-                        Únete a nuestra red global de investigadores. Por favor, proporciona los siguientes datos para evaluar tu perfil y áreas de colaboración potencial.
+                <!-- Panel: DATOS -->
+                <article id="datos" class="panel bg-transparent p-4 rounded-lg hidden">
+                    <h2 class="text-2xl font-semibold">Datos</h2>
+                    <p class="text-sm text-[#94a3b8] mt-2">
+                        La innovación se mide con métricas. Transparencia y resultados son la base de nuestro trabajo.
                     </p>
 
-                    <form action="registro.php" method="POST" enctype="multipart/form-data" target="_blank">
-                        <label>
-                            Nombre Completo (Requerido)
-                            <input type="text" name="nombre_completo" placeholder="Nombre y Apellido" required>
-                        </label>
-
-                        <label>
-                            Email Profesional (Requerido)
-                            <input type="email" name="email_profesional" placeholder="tu.nombre@institucion.com" required>
-                        </label>
-
-                        <label>
-                            Institución/Universidad Actual
-                            <input type="text" name="institucion" placeholder="Nombre de la Universidad o Centro de Investigación">
-                        </label>
-
-                        <label>
-                            Área Principal de Especialización
-                            <select name="area_especializacion">
-                                <option value="" disabled selected>Selecciona tu campo de estudio principal</option>
-                                <option value="neurociencia">Neurociencia Computacional</option>
-                                <option value="deep_learning">Deep Learning y Redes Neuronales</option>
-                                <option value="bci">Interfaces Cerebro-Máquina (BCI)</option>
-                                <option value="robotica">Robótica e Inteligencia Artificial</option>
-                                <option value="genomica">Genómica y Bioinformática</option>
-                            </select>
-                        </label>
-
-                        <label>
-                            Máximo Nivel Educativo
-                            <select name="nivel_educativo">
-                                <option value="maestria">Maestría</option>
-                                <option value="doctorado" selected>Doctorado (PhD)</option>
-                                <option value="postdoc">Postdoctorado</option>
-                            </select>
-                        </label>
-
-                        <label>
-                            Años de Experiencia en Investigación (Mínimo 3)
-                            <input type="number" name="anos_experiencia" min="3" placeholder="Ej: 8" required>
-                        </label>
-
-                        <p>Proyectos de Interés para Colaboración</p>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="interes_neurohud">
-                                NeuroHUD (Interfaces Holográficas)
-                            </label>
-
-                            <label>
-                                <input type="checkbox" name="interes_mindbridge">
-                                MindBridge (IA Médica Conectiva)
-                            </label>
-
-                            <label>
-                                <input type="checkbox" name="interes_synapsim">
-                                SynapSim (Simulación Neural)
-                            </label>
-                        </div>
-
-                        <label>
-                            URL de Perfil Académico (LinkedIn, ResearchGate, etc.)
-                            <input type="url" name="url_perfil" placeholder="https://linkedin.com/in/tunombre">
-                        </label>
-
-                        <label>
-                            Resumen de Experiencia (Máx. 300 caracteres)
-                            <textarea name="resumen_experiencia" rows="4" maxlength="300" placeholder="Describe brevemente tus logros más relevantes en el campo..."></textarea>
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="acepta_terminos" required>
-                            Acepto los <a href="#">Términos de Colaboración</a> (Requerido)
-                        </label>
-
-                        <div>
-                            <button type="submit">Enviar Registro</button>
-                            <button type="reset">Limpiar Formulario</button>
-                        </div>
-                    </form>
+                    <div class="overflow-x-auto mt-4">
+                        <table class="w-full border-collapse text-sm">
+                            <thead class="bg-white/10">
+                                <tr>
+                                    <th class="p-2 border border-white/10 text-left">Proyecto</th>
+                                    <th class="p-2 border border-white/10 text-left">Estado Actual</th>
+                                    <th class="p-2 border border-white/10 text-left">Métrica de Impacto</th>
+                                    <th class="p-2 border border-white/10 text-left">Publicaciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-white/5 transition">
+                                    <td class="p-2 border border-white/10">NeuroHUD</td>
+                                    <td class="p-2 border border-white/10">En Piloto (Fase 2)</td>
+                                    <td class="p-2 border border-white/10">Precisión: 98.5%</td>
+                                    <td class="p-2 border border-white/10 text-green-400">1 Patente</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition">
+                                    <td class="p-2 border border-white/10">MindBridge</td>
+                                    <td class="p-2 border border-white/10">Implementación Activa</td>
+                                    <td class="p-2 border border-white/10">Aceleración: 60%</td>
+                                    <td class="p-2 border border-white/10 text-yellow-400">Estudio Clínico</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition">
+                                    <td class="p-2 border border-white/10">SynapSim</td>
+                                    <td class="p-2 border border-white/10">Beta Pública</td>
+                                    <td class="p-2 border border-white/10">Adopción: 82%</td>
+                                    <td class="p-2 border border-white/10 text-blue-400">Tutorial Video</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </article>
 
-                <article id="datos">
-                    <h2>Datos</h2>
-                    <p>La innovación se mide con métricas. Transparencia y resultados son la base de nuestro trabajo.</p>
+                <!-- Panel: ENLACES -->
+                <article id="links" class="panel bg-transparent p-4 rounded-lg hidden">
+                    <h2 class="text-2xl font-semibold">Enlaces Útiles</h2>
+                    <p class="text-sm text-[#94a3b8] mt-2">
+                        Accede rápidamente a documentación clave, whitepapers y nuestros canales de comunicación.
+                    </p>
 
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Proyecto</th>
-                                <th>Estado Actual</th>
-                                <th>Métrica de Impacto</th>
-                                <th>Publicaciones Relevantes</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>NeuroHUD</td>
-                                <td>En Piloto (Fase 2)</td>
-                                <td>Precisión en Detección: 98.5%</td>
-                                <td>1 Patente Provisional</td>
-                            </tr>
-
-                            <tr>
-                                <td>MindBridge</td>
-                                <td>Implementación Activa</td>
-                                <td>Aceleración de Diagnóstico: 60%</td>
-                                <td>Estudio Clínico (PDF)</td>
-                            </tr>
-
-                            <tr>
-                                <td>SynapSim</td>
-                                <td>Beta Pública</td>
-                                <td>Tasa de Adopción: 82%</td>
-                                <td>Tutorial de Integración (Video)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
-
-                <article id="links">
-                    <h2>Enlaces</h2>
-                    <p>Accede rápidamente a documentación clave, whitepapers y nuestros canales de comunicación.</p>
-                    <ul>
+                    <ul class="mt-4 space-y-3">
                         <li>
-                            <a href="https://www.technologyreview.es/" target="_blank" rel="noopener">
+                            <a href="https://www.technologyreview.es/" target="_blank" rel="noopener" class="text-[#06b6d4] hover:text-white transition">
                                 <strong>MIT Technology Review en español:</strong> Artículos sobre avances en IA y Deep Learning.
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.aepia.org/" target="_blank" rel="noopener">
+                            <a href="https://www.aepia.org/" target="_blank" rel="noopener" class="text-[#06b6d4] hover:text-white transition">
                                 <strong>AEPIA:</strong> Comunidad española para discusión y networking en IA.
                             </a>
                         </li>
                         <li>
-                            <a href="/docs/presentacion.pdf" download>Descarga: presentacion.pdf</a>
+                            <a href="/docs/presentacion.pdf" download class="text-[#06b6d4] hover:text-white transition">
+                                <strong>Descarga:</strong> presentacion.pdf
+                            </a>
                         </li>
                     </ul>
+                </article>
+
+                <!-- Panel: CONTRIBUIR -->
+                <article id="colabora" class="panel bg-transparent p-4 rounded-lg hidden">
+                    <h2 class="text-2xl font-semibold">Registro de Científicos Colaboradores</h2>
+                    <p class="text-sm text-[#94a3b8] mt-2">
+                        Únete a nuestra red global de investigadores. Por favor, proporciona los siguientes datos para evaluar tu perfil y áreas de colaboración potencial.
+                    </p>
+
+                    <form action="registro.php" method="POST" enctype="multipart/form-data" target="_blank" class="mt-4 space-y-3">
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-sm font-medium text-[#94a3b8] mb-1">Nombre Completo (Requerido)</label>
+                                <input type="text" name="nombre_completo" placeholder="Nombre y Apellido" required
+                                    class="w-full p-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#06b6d4] text-[#e6eef8]">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-[#94a3b8] mb-1">Email Profesional (Requerido)</label>
+                                <input type="email" name="email_profesional" placeholder="tu.nombre@institucion.com" required
+                                    class="w-full p-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#06b6d4] text-[#e6eef8]">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-[#94a3b8] mb-1">Institución/Universidad Actual</label>
+                            <input type="text" name="institucion" placeholder="Nombre de la Universidad o Centro de Investigación"
+                                class="w-full p-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#06b6d4] text-[#e6eef8]">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-sm font-medium text-[#94a3b8] mb-1">Área Principal de Especialización</label>
+                                <select name="area_especializacion"
+                                    class="w-full p-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#06b6d4] text-[#e6eef8]">
+                                    <option value="" disabled selected>Selecciona tu campo</option>
+                                    <option value="neurociencia">Neurociencia Computacional</option>
+                                    <option value="deep_learning">Deep Learning y Redes Neuronales</option>
+                                    <option value="bci">Interfaces Cerebro-Máquina (BCI)</option>
+                                    <option value="robotica">Robótica e Inteligencia Artificial</option>
+                                    <option value="genomica">Genómica y Bioinformática</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-[#94a3b8] mb-1">Máximo Nivel Educativo</label>
+                                <select name="nivel_educativo"
+                                    class="w-full p-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#06b6d4] text-[#e6eef8]">
+                                    <option value="maestria">Maestría</option>
+                                    <option value="doctorado" selected>Doctorado (PhD)</option>
+                                    <option value="postdoc">Postdoctorado</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-[#94a3b8] mb-1">Años de Experiencia (Mínimo 3)</label>
+                            <input type="number" name="anos_experiencia" min="3" placeholder="Ej: 8" required
+                                class="w-full p-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#06b6d4] text-[#e6eef8]">
+                        </div>
+
+                        <div>
+                            <p class="text-sm font-medium text-[#94a3b8] mb-2">Proyectos de Interés para Colaboración</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 text-sm text-[#94a3b8]">
+                                    <input type="checkbox" name="interes_neurohud" class="w-4 h-4 rounded">
+                                    NeuroHUD (Interfaces Holográficas)
+                                </label>
+                                <label class="flex items-center gap-2 text-sm text-[#94a3b8]">
+                                    <input type="checkbox" name="interes_mindbridge" class="w-4 h-4 rounded">
+                                    MindBridge (IA Médica Conectiva)
+                                </label>
+                                <label class="flex items-center gap-2 text-sm text-[#94a3b8]">
+                                    <input type="checkbox" name="interes_synapsim" class="w-4 h-4 rounded">
+                                    SynapSim (Simulación Neural)
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-[#94a3b8] mb-1">URL de Perfil Académico</label>
+                            <input type="url" name="url_perfil" placeholder="https://linkedin.com/in/tunombre"
+                                class="w-full p-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#06b6d4] text-[#e6eef8]">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-[#94a3b8] mb-1">Resumen de Experiencia (Máx. 300 caracteres)</label>
+                            <textarea name="resumen_experiencia" rows="4" maxlength="300" placeholder="Describe brevemente tus logros más relevantes..."
+                                class="w-full p-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#06b6d4] text-[#e6eef8]"></textarea>
+                        </div>
+
+                        <label class="flex items-start gap-2 text-sm text-[#94a3b8]">
+                            <input type="checkbox" name="acepta_terminos" required class="w-4 h-4 rounded mt-0.5">
+                            Acepto los <a href="#" class="text-[#06b6d4] hover:text-white transition">Términos de Colaboración</a> (Requerido)
+                        </label>
+
+                        <div class="flex gap-3 pt-2">
+                            <button type="submit" class="flex-1 bg-gradient-to-r from-[#7c3aed] to-[#06b6d4] text-black py-2 rounded-lg font-medium hover:opacity-90 transition">
+                                Enviar Registro
+                            </button>
+                            <button type="reset" class="flex-1 border border-white/10 py-2 rounded-lg hover:bg-white/5 transition">
+                                Limpiar
+                            </button>
+                        </div>
+                    </form>
                 </article>
 
             </section>
         </div>
 
-        <footer>
-            <p>© 2025 NeuroLink Technologies — Inspirando la próxima generación de interfaces inteligentes.</p>
+        <!-- FOOTER -->
+        <footer class="mt-10 p-4 text-center text-sm text-[#94a3b8] border-t border-white/10">
+            © 2025 NeuroLink Technologies — Inspirando la próxima generación de interfaces inteligentes.
         </footer>
+
     </div>
+
+    <!-- Script: comportamiento de pestañas -->
+    <script>
+        (function(){
+            const panels = document.querySelectorAll('.panel');
+            function showPanel(hash){
+                let target = hash ? document.querySelector(hash) : document.getElementById('inicio');
+                if(!target) target = document.getElementById('inicio');
+                panels.forEach(p => p.classList.add('hidden'));
+                target.classList.remove('hidden');
+                target.setAttribute('tabindex','-1');
+                target.focus();
+            }
+            showPanel(location.hash);
+            window.addEventListener('hashchange', ()=> showPanel(location.hash));
+            document.querySelectorAll('nav a').forEach(a=>{
+                a.addEventListener('click', ()=> {
+                    setTimeout(()=> showPanel(location.hash), 10);
+                });
+            });
+        })();
+    </script>
+
 </body>
 </html>
+
+
+
